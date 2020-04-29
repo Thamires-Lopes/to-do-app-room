@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todoapproom.R
-import com.example.todoapproom.models.Item
+import com.example.todoapproom.database.Item
 import kotlinx.android.synthetic.main.todo_item.view.*
 
 class ItemsAdapter(
