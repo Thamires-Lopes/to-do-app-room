@@ -10,7 +10,7 @@ interface ItemDao {
     suspend fun addItem(item: Item)
 
     @Query("SELECT * FROM Item")
-    suspend fun getAllItems() : List<Item>
+    suspend fun getAllItems(): List<Item>
 
     @Insert
     suspend fun addMultipleItems(vararg item: Item) //do I need this?

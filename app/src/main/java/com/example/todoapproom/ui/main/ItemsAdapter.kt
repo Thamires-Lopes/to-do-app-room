@@ -9,8 +9,8 @@ import com.example.todoapproom.database.Item
 import kotlinx.android.synthetic.main.todo_item.view.*
 
 class ItemsAdapter(
-    val items: List<Item>
-) : RecyclerView.Adapter<ItemsAdapter.ItemsViewHolder> () {
+    private val items: List<Item>
+) : RecyclerView.Adapter<ItemsAdapter.ItemsViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemsViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.todo_item, parent, false)
         return ItemsViewHolder(view)
